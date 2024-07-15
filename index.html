@@ -19,15 +19,17 @@
             position: relative;
             width: 100%;
             height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+            max-width: 100%;
+            max-height: 100%;
         }
         .message {
             position: absolute;
-            top: 10px;
+            top: 10%;
             left: 50%;
             transform: translateX(-50%);
             background: rgba(255, 255, 255, 0.8);
@@ -59,7 +61,6 @@
         a:hover {
             text-decoration: underline;
         }
-      
     </style>
 </head>
 <body>
@@ -69,15 +70,15 @@
             Your browser does not support the video tag.
         </video>
         <div id="message" class="message">Happy Birthday to my best friend! <br> 
-            I'm sorry we couldn't spend your 22nd together</br>
-            <br>Your first gift was some peace & quiet (i know i'm annoying sometimes).. now here's your real gift.. </br>
-            <br>To untie your present, tap the ribbon once!</br></div>
+            I'm sorry we couldn't spend your 22nd together<br>
+            Your first gift was some peace & quiet (I know I'm annoying sometimes).. now here's your real gift... <br>
+            To untie your present, tap the ribbon once!</div>
         <video id="tapBox" playsinline>
             <source src="TapBox.MOV" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <div id="messageBox" class="message"><br> To open the box and reach in for your gift... </br>
-            <br>Tap the lid once!</br></div>
+        <div id="messageBox" class="message">To open the box and reach in for your gift... <br>
+            Tap the lid once!</div>
         <div id="finalMessage">
             <a href="https://www.avionrewards.com/login/sign-in.html" target="_blank">https://www.avionrewards.com/login/sign-in.html</a><br>
             Username: 4519021985043910<br>
